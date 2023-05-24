@@ -6,7 +6,7 @@ indicarlo en un mensaje.
 
 let edad = prompt("Coloque su edad");
 
-if (edad >= 18) {
+if (edad > 17) {
     document.write("Ya puede conducir");
 } else if (edad < 18) {
     document.write("Es menor de edad, no puede conducir ");
@@ -88,8 +88,8 @@ while (cadena) {
 }
 
 4- Realiza un script que pida numeros hasta que se pulse "cancelar".
-Si no es un numero deberá indicarse con un alert y seguir pidiente numeros
-Al salir con cancelar debera indicar la suma total de los numeros introducirlos.*/
+Si no es un numero deberá indicarse con un alert y seguir pidiendo numeros
+Al salir con cancelar debera indicar la suma total de los numeros introducirlos.
 
 let numero = "";
 let comprobacion = true
@@ -103,6 +103,49 @@ while (comprobacion) {
         alert("No es un numero valido");
     }
 }
+
+6- Realiza un script que escriba una pirámide del 1 al 30 
+de la siguiente forma :
+
+1
+22
+333
+4444
+55555
+666666
+…….
+
+for (let i = 1; i < 31;i++) {
+    let auxiliar = i + "";
+    console.log(auxiliar.repeat(i));
+}
+
+7- Haz un script que escriba una pirámide inversa de los números
+del 1 al número que indique el usuario (no mayor de 50)  
+de la siguiente forma : (suponiendo que indica 30).
+
+303030303030303030303030303030303030303030303030303030303030
+2929292929292929292929292929292929292929292929292929292929
+28282828282828282828282828282828282828282828282828282828
+…..
+333
+22
+1
+
+let numero = parseInt(prompt("Ingreso un numero"));
+if (numero <= 50) {
+    for (let i = numero; i > 0; i--) {
+        console.log(i.toString().repeat(i));  
+} 
+
+} else {
+    console.log("Error");
+}*/
+
+
+
+
+
 
 
 
